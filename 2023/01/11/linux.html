@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/myimg.ico >
+    <title>
+        hech小站
+    </title>
+    <meta name="description" content= 科技与狠活 >
+    <meta name="keywords" content= Blog,Hexo,zjm,hech >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            linux
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h3 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h3><h4 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h4><ol>
+<li><p>Linux目录简洁</p>
+<ul>
+<li><code>windows</code>:以多根方式组织文件C:\ D:\ E:\</li>
+<li><code>linux</code>:以单根方式组织文件 &#x2F;</li>
+</ul>
+</li>
+<li><p><code>linux</code>目录结构</p>
+<p> <img src="https://aliyun-typecho-blog.oss-cn-hangzhou.aliyuncs.com/image/linux%E7%9B%AE%E5%BD%9501.png"></p>
+</li>
+<li><p>目录详细讲解</p>
+<ol>
+<li><code>boot</code>:和<code>linux</code>启动相关文件</li>
+<li><code>bin</code>:可执行文件路径</li>
+<li><code>dev</code>：驱动和硬件文</li>
+<li><code>etc</code>:配置文件</li>
+<li><code>home</code>:用户家文件夹</li>
+<li><code>run</code>:运行是的目录</li>
+<li><code>sbin</code>:超级管理员的可执行目录</li>
+<li><code>tmp</code>:缓存</li>
+<li><code>usr</code>:应用的安装路径<ol>
+<li><code>bin</code>:可执行文件路径</li>
+<li><code>local</code>:安装路径</li>
+<li><code>sbin</code>:超级管理员可执行路径</li>
+<li><code>tmp</code>:</li>
+</ol>
+</li>
+<li><code>var</code></li>
+</ol>
+</li>
+</ol>
+<h4 id="目录管理命令"><a href="#目录管理命令" class="headerlink" title="目录管理命令"></a>目录管理命令</h4><ol>
+<li><p><code>cd </code>:切换目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> 路径 <span class="comment">#可以是绝对路径也可以是相对路径</span></span><br><span class="line"><span class="built_in">cd</span> / <span class="comment">#切换到/</span></span><br><span class="line"><span class="built_in">cd</span> .. <span class="comment">#返回到上一级目录</span></span><br><span class="line"><span class="built_in">cd</span> - <span class="comment">#返回到上一个切换的目录</span></span><br><span class="line"><span class="built_in">cd</span> ~ <span class="comment">#返回到用户主目录</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>pwd</code>显示当前路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">显示当前绝对路径</span><br><span class="line"><span class="built_in">pwd</span></span><br><span class="line">/root</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>ls</code>显示文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> 路径 <span class="comment">#不写路径默认为当前目录</span></span><br><span class="line"><span class="built_in">ls</span>	查看当前目录下面的文件</span><br><span class="line"><span class="built_in">ls</span> / <span class="comment">#查看/目录下面的文件以及文件夹</span></span><br><span class="line"><span class="comment">#可选参数</span></span><br><span class="line">-l <span class="comment">#查看文件的详细信息,但是不包括隐藏文件</span></span><br><span class="line">-a <span class="comment">#显示隐藏文件 以.开头的</span></span><br><span class="line">可以组合参数</span><br><span class="line"><span class="built_in">ls</span> -la <span class="comment">#显示所有文件以及隐藏文件的详细信息</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>touch</code>创建文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> 文件路径</span><br><span class="line"><span class="built_in">touch</span> [文件] [文件] [文件] [....]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>mkdir</code>创建文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> 路径文件夹名</span><br><span class="line"><span class="built_in">mkdir</span> demo <span class="comment">#在当前路径创建demo这个文件夹</span></span><br><span class="line"><span class="built_in">mkdir</span> /demo <span class="comment">#在/目录下面传教demo文件夹</span></span><br><span class="line">参数</span><br><span class="line">-r <span class="comment">#迭代创建</span></span><br><span class="line"><span class="comment">#在/root创建路径</span></span><br><span class="line">/root/demo/a/b/c/d</span><br><span class="line">可以使用迭代</span><br><span class="line"><span class="built_in">mkdir</span> -r /root/demo/a/b/c/d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>cp</code>复制文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> 原文件 目标目录</span><br><span class="line"><span class="built_in">cp</span> /root/demo.c / 直接复制</span><br><span class="line">选项</span><br><span class="line">-r 递归复制</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>mv</code>移动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> 原文件 目标文件</span><br><span class="line"><span class="comment">#mv还可以重命名文件或文件夹 mv 原文件 目标</span></span><br><span class="line"><span class="built_in">mv</span> a b</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>rm</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span>删除文件或者目录</span><br><span class="line">参数</span><br><span class="line">-r <span class="comment">#强制删除</span></span><br><span class="line">-f <span class="comment">#显示详细信息</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看文件内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> 文件路径</span><br><span class="line">more 翻页查看</span><br><span class="line"><span class="built_in">head</span> -行 显示多少行</span><br><span class="line"><span class="built_in">tail</span> -行 从后面显示行</span><br><span class="line">grep 过滤</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重定向</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;将命令执行结果放到指定文件</span><br><span class="line">ls / &gt; ./demo.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重定向(追加)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;</span><br><span class="line">用两个<span class="string">&#x27;&gt;&#x27;</span>表示将命令执行结果追加到指定文件</span><br><span class="line"><span class="built_in">ls</span> / &gt;&gt; ./demo.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">这里使用vim</span><br><span class="line">vim 文件名</span><br><span class="line">这会进入vim命令行</span><br><span class="line">按i进入插入</span><br><span class="line">按esc退出插入</span><br><span class="line">保存退出   :wq</span><br><span class="line">退出不保存 :q!  <span class="comment"># &#x27;!&#x27;是强制</span></span><br><span class="line">命令行一些操作</span><br><span class="line">yy   是复制</span><br><span class="line">	复制多行的操作</span><br><span class="line">	按你想要复制行数 再按yy</span><br><span class="line">	比如 3yy向下复制三行</span><br><span class="line"></span><br><span class="line">p    是粘贴</span><br><span class="line"></span><br><span class="line"><span class="built_in">dd</span>   删除当前行</span><br><span class="line">	删除多行</span><br><span class="line">	按你想删除的行数 再按<span class="built_in">dd</span></span><br><span class="line">	3dd删除删除</span><br><span class="line">	</span><br><span class="line">u    撤销</span><br><span class="line"></span><br><span class="line">v 按方向键选择 再按y复制</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">a进入插入模式</span><br><span class="line">i进入插入模式</span><br><span class="line">o进入插入模式</span><br><span class="line">A进入插入模式</span><br><span class="line">它们的区别在于光标位置</span><br><span class="line"></span><br><span class="line">:进入末行模式(扩展名模式)</span><br><span class="line">v 进入可视化模式</span><br><span class="line">ESC返回命令行模式</span><br><span class="line"></span><br><span class="line">:<span class="built_in">set</span> nu 设置显示行号</span><br><span class="line"></span><br><span class="line">:开始范围,结束范围 s/被替换/替换/g</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">whoami</span> <span class="comment">##查看当前用户</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h3><ol>
+<li><p>用户基本信息</p>
+<p>用户基本信息文件 :<code>/etc/passwd</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/passwd</span><br><span class="line">root:x:0:0:root:/root:/bin/bash</span><br><span class="line">daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin</span><br><span class="line">bin:x:2:2:bin:/bin:/usr/sbin/nologin</span><br><span class="line">sys:x:3:3:sys:/dev:/usr/sbin/nologin</span><br><span class="line"><span class="built_in">sync</span>:x:4:65534:<span class="built_in">sync</span>:/bin:/bin/sync</span><br><span class="line">games:x:5:60:games:/usr/games:/usr/sbin/nologin</span><br><span class="line">man:x:6:12:man:/var/cache/man:/usr/sbin/nologin</span><br><span class="line">lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin</span><br><span class="line">mail:x:8:8:mail:/var/mail:/usr/sbin/nologin</span><br><span class="line">news:x:9:9:news:/var/spool/news:/usr/sbin/nologin</span><br><span class="line">uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin</span><br><span class="line">proxy:x:13:13:proxy:/bin:/usr/sbin/nologin</span><br><span class="line">www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin</span><br><span class="line">backup:x:34:34:backup:/var/backups:/usr/sbin/nologin</span><br><span class="line">list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin</span><br><span class="line">irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin</span><br><span class="line">gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin</span><br><span class="line">nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin</span><br><span class="line">systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin</span><br><span class="line">systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin</span><br><span class="line">systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin</span><br><span class="line">messagebus:x:103:106::/nonexistent:/usr/sbin/nologin</span><br><span class="line">syslog:x:104:110::/home/syslog:/usr/sbin/nologin</span><br><span class="line">_apt:x:105:65534::/nonexistent:/usr/sbin/nologin</span><br><span class="line">tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false</span><br><span class="line">uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin</span><br><span class="line">tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin</span><br><span class="line">landscape:x:109:115::/var/lib/landscape:/usr/sbin/nologin</span><br><span class="line">pollinate:x:110:1::/var/cache/pollinate:/bin/false</span><br><span class="line">sshd:x:111:65534::/run/sshd:/usr/sbin/nologin</span><br><span class="line">systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin</span><br><span class="line">ubuntu:x:1000:1000:ubuntu:/home/ubuntu:/bin/bash</span><br><span class="line">lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false</span><br><span class="line">ntp:x:112:117::/nonexistent:/usr/sbin/nologin</span><br><span class="line">_rpc:x:113:65534::/run/rpcbind:/usr/sbin/nologin</span><br><span class="line">statd:x:114:65534::/var/lib/nfs:/usr/sbin/nologin</span><br><span class="line"><span class="built_in">bind</span>:x:115:118::/var/cache/bind:/usr/sbin/nologin</span><br><span class="line">lighthouse:x:1001:1001::/home/lighthouse:/bin/bash</span><br><span class="line">usbmux:x:116:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin</span><br><span class="line">www:x:1002:1002::/home/www:/sbin/nologin</span><br><span class="line">smmta:x:117:120:Mail Transfer Agent,,,:/var/lib/sendmail:/usr/sbin/nologin</span><br><span class="line">smmsp:x:118:121:Mail Submission Program,,,:/var/lib/sendmail:/usr/sbin/nologin</span><br><span class="line">mysql:x:1003:1003::/home/mysql:/sbin/nologin</span><br><span class="line">mongo:x:1004:1004::/home/mongo:/sbin/nologin</span><br><span class="line">redis:x:1005:1005::/home/redis:/sbin/nologin</span><br><span class="line">用户名:x:uid:gid:描述:HOME:bash</span><br><span class="line">uid : 用户标识</span><br><span class="line">gid : 用户组标识</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用户密码信息文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/etc/shadow</span><br><span class="line"><span class="built_in">cat</span> /etc/shadow</span><br><span class="line">ubuntu:$1$VIKMQPEU<span class="variable">$WzPNvJNTkg5wsLXr4XX</span>.o.:19128:0:99999: 7 : 28 :   :</span><br><span class="line">1       2                                   3   4   5    6    7   8    9 </span><br><span class="line">1用户名 :</span><br><span class="line">2加密值:</span><br><span class="line">3最后修改时间</span><br><span class="line">4最小时间间隔：0表示是随时可以改密码,5代表改完5天以后才可以改</span><br><span class="line">5最大时间间隔(密码有效期)(99999表示无限)</span><br><span class="line">6警告时间7天</span><br><span class="line">7 不活动时间,(用户不登录,保留时间,过了这个时间禁用这个账户)</span><br><span class="line">8失效时间(时间一到就失效了,账号就不能使用)</span><br><span class="line">9保留</span><br><span class="line">$6$ 开头表示密码用SHA-512加密</span><br><span class="line">$1$ 开头表示用MD5加密</span><br><span class="line">$2$ 开头表示用Blowfish加密</span><br><span class="line">$5$ 开头表示SHA-256加密</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用户组信息文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">[root@bogon ~]<span class="comment"># cat /etc/group</span></span><br><span class="line">root:x:0:</span><br><span class="line">bin:x:1:</span><br><span class="line">daemon:x:2:</span><br><span class="line">sys:x:3:</span><br><span class="line">adm:x:4:</span><br><span class="line"><span class="built_in">tty</span>:x:5:</span><br><span class="line">disk:x:6:</span><br><span class="line">lp:x:7:</span><br><span class="line">mem:x:8:</span><br><span class="line">kmem:x:9:</span><br><span class="line">wheel:x:10:zjm</span><br><span class="line">cdrom:x:11:</span><br><span class="line">mail:x:12:postfix</span><br><span class="line">man:x:15:</span><br><span class="line">dialout:x:18:</span><br><span class="line">floppy:x:19:</span><br><span class="line">games:x:20:</span><br><span class="line">tape:x:33:</span><br><span class="line">video:x:39:</span><br><span class="line">ftp:x:50:</span><br><span class="line">lock:x:54:</span><br><span class="line">audio:x:63:</span><br><span class="line">nobody:x:99:</span><br><span class="line"><span class="built_in">users</span>:x:100:</span><br><span class="line">utmp:x:22:</span><br><span class="line">utempter:x:35:</span><br><span class="line">input:x:999:</span><br><span class="line">systemd-journal:x:190:</span><br><span class="line">systemd-network:x:192:</span><br><span class="line">dbus:x:81:</span><br><span class="line">polkitd:x:998:</span><br><span class="line">printadmin:x:997:</span><br><span class="line">cgred:x:996:</span><br><span class="line">libstoragemgmt:x:995:</span><br><span class="line">colord:x:994:</span><br><span class="line">rpc:x:32:</span><br><span class="line">saned:x:993:</span><br><span class="line">dip:x:40:</span><br><span class="line">gluster:x:992:</span><br><span class="line">ssh_keys:x:991:</span><br><span class="line">saslauth:x:76:</span><br><span class="line">abrt:x:173:</span><br><span class="line">setroubleshoot:x:990:</span><br><span class="line">rtkit:x:172:</span><br><span class="line">pulse-access:x:989:</span><br><span class="line">pulse-rt:x:988:</span><br><span class="line">pulse:x:171:</span><br><span class="line">radvd:x:75:</span><br><span class="line">chrony:x:987:</span><br><span class="line">unbound:x:986:</span><br><span class="line">kvm:x:36:qemu</span><br><span class="line">qemu:x:107:</span><br><span class="line">tss:x:59:</span><br><span class="line">libvirt:x:985:</span><br><span class="line">sssd:x:984:</span><br><span class="line">usbmuxd:x:113:</span><br><span class="line">geoclue:x:983:</span><br><span class="line">ntp:x:38:</span><br><span class="line">gdm:x:42:</span><br><span class="line">rpcuser:x:29:</span><br><span class="line">nfsnobody:x:65534:</span><br><span class="line">gnome-initial-setup:x:982:</span><br><span class="line">sshd:x:74:</span><br><span class="line">slocate:x:21:</span><br><span class="line">avahi:x:70:</span><br><span class="line">postdrop:x:90:</span><br><span class="line">postfix:x:89:</span><br><span class="line">stapusr:x:156:</span><br><span class="line">stapsys:x:157:</span><br><span class="line">stapdev:x:158:</span><br><span class="line">tcpdump:x:72:</span><br><span class="line">zjm:x:1000:</span><br><span class="line">docker:x:981:</span><br><span class="line">组名:组密码:组ID:组成员</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用户创建命令<code>useradd</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd 要创建的用户名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询<code>id</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">id</span> 用户名</span><br><span class="line"><span class="built_in">id</span> root</span><br><span class="line">uid=0(root) gid=0(root) 组=0(root)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>改密码<code>passwd</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">passwd 用户名忽略为当前用户</span><br><span class="line">passwd root</span><br><span class="line">更改用户 root 的密码 。</span><br><span class="line">新的 密码：</span><br><span class="line">无效的密码： 密码未提供</span><br><span class="line">重新输入新的 密码：</span><br><span class="line">密码未提供</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>useradd</code>的参数</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">-b <span class="comment">#设置用户的home目录</span></span><br><span class="line">举例</span><br><span class="line">useradd admin -b /home/admin</span><br><span class="line">这个把admin的家目录设置为/home/admin</span><br><span class="line"></span><br><span class="line">-u <span class="comment">#指定uid</span></span><br><span class="line">举例</span><br><span class="line">useradd admin -u 1503 </span><br><span class="line">这个就是把admin的uid设置为1503</span><br><span class="line">user02:x:1503:1503::/home/user02:/bin/bash</span><br><span class="line"></span><br><span class="line">-g <span class="comment">#设置用户的主组</span></span><br><span class="line">举例</span><br><span class="line">useradd -g root admin</span><br><span class="line">创建一个admin的用户把他的主组设置为root组</span><br><span class="line"></span><br><span class="line">-G <span class="comment">#设置附加组</span></span><br><span class="line">举例</span><br><span class="line">useradd -g root -G user01 admin</span><br><span class="line">创建一个admin的用户设置主组为root,附加组为user01</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除用户</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">userdel 用户名</span><br><span class="line">-r <span class="comment">#删除用户的主目录一般都加</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改用户属性</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">usermod 操作 用户</span><br><span class="line">-s <span class="comment">#设置登录bash</span></span><br><span class="line">举例</span><br><span class="line">usermod -s /sbin/nologin user01</span><br><span class="line">这个设置usero01的登录bash,但是这个bash不能登录</span><br><span class="line">usermod -s /bin/bash user01</span><br><span class="line"></span><br><span class="line">-d <span class="comment">#重新设置home目录</span></span><br><span class="line">举例</span><br><span class="line">usermod -d /admin admin</span><br><span class="line">usermod -d /home/admin admin</span><br><span class="line">命令     选项  参数      用户名</span><br><span class="line"></span><br><span class="line">-g 修改用户的主组</span><br><span class="line">-g 组名或ID</span><br><span class="line">举例</span><br><span class="line">usermod -g user01 user02</span><br><span class="line">将user02这个用户的主组改为user01</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="组"><a href="#组" class="headerlink" title="组"></a>组</h3><ol>
+<li><p>创建组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd 组名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupdel 组名</span><br><span class="line">删除的前提是组里面没有用户了</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>id</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">查看用户的组和其他信息</span><br><span class="line"><span class="built_in">id</span> 用户名</span><br><span class="line">[root@hech-linux ~]<span class="comment"># id zjm</span></span><br><span class="line">uid=1000(zjm) gid=1000(zjm) 组=1000(zjm),10(wheel)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>gpasswd </code>将用户从组中移除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">gpasswd 操作 用户名 组</span><br><span class="line">gpasswd -d 从组 GROUP 中添加或删除用户</span><br><span class="line">gpasswd -d 用户名 组</span><br><span class="line">gpasswd -d admin root</span><br><span class="line">将admin从root组移除</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提权(了解)</p>
+<ol>
+<li>普通用户是没有权限的</li>
+<li>尽量少用root</li>
+<li>普通用户执行特殊命令时,使用su切换到超级管理身</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su - root 然后输入用户的密码</span><br><span class="line">输入密码的时候是没有提示的</span><br><span class="line">切换的指定用户</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>临时提权<code>sudo</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.使用普通登录服务器时.</span><br><span class="line">2.完成部分特权命令</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="用户权限"><a href="#用户权限" class="headerlink" title="用户权限"></a>用户权限</h3><ol>
+<li><p>基本权限(UGO)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">权限的三类对象</span><br><span class="line">1.属主:u</span><br><span class="line">2.属组:g</span><br><span class="line">3.其他人:o</span><br><span class="line">特殊对象:所有人:a(u+g+o)(all)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>权限的三衷类型</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 读:r=4</span><br><span class="line">2. 写:w=2</span><br><span class="line">3. 执行:x=1</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+
+    </div>
+
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: hech </h4>
+    
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
+
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
+</div>
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="">
+<input type="hidden" id="valine_appKey" value="">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
+</style>
+    <!-- <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script> -->
+</body>
+</html>
