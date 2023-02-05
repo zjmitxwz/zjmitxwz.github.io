@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>linux命令设置语言</title>
+      <link href="/2023/01/30/linux%E5%91%BD%E4%BB%A4%E8%AE%BE%E7%BD%AE%E8%AF%AD%E8%A8%80.html"/>
+      <url>/2023/01/30/linux%E5%91%BD%E4%BB%A4%E8%AE%BE%E7%BD%AE%E8%AF%AD%E8%A8%80.html</url>
+      
+        <content type="html"><![CDATA[<h4 id="查看当前语言"><a href="#查看当前语言" class="headerlink" title="查看当前语言"></a>查看当前语言</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locale</span><br></pre></td></tr></table></figure><h4 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg-reconfigure locales</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>quark-n重新移植uboot</title>
       <link href="/2023/01/28/quark-n%E9%87%8D%E6%96%B0%E7%A7%BB%E6%A4%8Duboot.html"/>
       <url>/2023/01/28/quark-n%E9%87%8D%E6%96%B0%E7%A7%BB%E6%A4%8Duboot.html</url>

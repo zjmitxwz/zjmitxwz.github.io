@@ -28,28 +28,15 @@
  replay-btn" aria-hidden="true"></i></a>
     <div class="post-title">
         <p>
-            pip和npm换源
+            linux命令设置语言
         </p>
         <hr>
     </div>
     <div class="post-content">
-        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>pip是python的包管理器</p>
-<p>npm是nodejs的包管理器</p>
-<p>我这里以阿里云永久换源为主其他镜像站也是一样的</p>
-<h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><h4 id="pip"><a href="#pip" class="headerlink" title="pip"></a>pip</h4><ol>
-<li><p>命令(我推荐)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip config <span class="built_in">set</span> global.index-url https://mirrors.aliyun.com/pypi/simple/</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>改文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#linux系统文件在~/.pip/pip.conf</span><br><span class="line">#win系统在%HOMEPATH%\pip\pip.ini</span><br><span class="line">[global]</span><br><span class="line">index-url = https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line">[install]</span><br><span class="line">trusted-host=mirrors.aliyun.com</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h4><ol>
-<li><p>命令(推荐)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="built_in">set</span> registry http://registry.npmmirror.com</span><br><span class="line"><span class="comment">#可以使用npm config list查看是否成功</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>改文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#文件在nodejs安装目录下面的node_modules/npm/.npmrc 没有可以新建</span><br><span class="line">#或者在~/.npmrc</span><br><span class="line">registry=http://registry.npmmirror.com/</span><br></pre></td></tr></table></figure></li>
-</ol>
+        <h4 id="查看当前语言"><a href="#查看当前语言" class="headerlink" title="查看当前语言"></a>查看当前语言</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locale</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg-reconfigure locales</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
